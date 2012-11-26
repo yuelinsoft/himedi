@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv=content-type content="text/html; charset=UTF-8">
+	<title>快递单打印</title>
+	<script src="../js/ExpressFlex.js" ></script>
+		<style>
+.tdline{
+	border-right:1px #ccc solid;
+}
+</style>
+</head>
+    <body scroll="no">
+
+		<div id="writeroot"></div>
+		
+		<div id="flashoutput">
+			<noscript>
+				<object id="flexApp" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,5,0,0" height="600" width="900">
+				<param name="flashvars" value="bridgeName=example"/>
+				<param name="src" value="../../Storage/master/flex/PrintExpressTemplate.swf"/>
+				<embed name="flexApp" pluginspage="http://www.macromedia.com/go/getflashplayer" src="../../Storage/master/flex/PrintExpressTemplate.swf" height="600" width="900" flashvars="bridgeName=example"/>
+				</object>
+			</noscript>
+			<script language="javascript" charset="utf-8">
+				document.write('<object id="flexApp" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,5,0,0" height="600" width="900">');
+				document.write('<param name="flashvars" value="bridgeName=example"/>');
+				document.write('<param name="src" value="../../Storage/master/flex/PrintExpressTemplate.swf"/>');
+				document.write('<embed name="flexApp" pluginspage="http://www.macromedia.com/go/getflashplayer" src="../../Storage/master/flex/PrintExpressTemplate.swf" height="600" width="900" flashvars="bridgeName=example"/>');
+				document.write('</object>');
+			</script>
+		</div>
+    </body>
+</html>

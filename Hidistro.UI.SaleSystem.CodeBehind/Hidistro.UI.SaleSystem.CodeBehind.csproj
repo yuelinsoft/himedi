@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2496E797-6BE8-4037-B952-A5B83DB3005E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Hidistro.UI.SaleSystem.CodeBehind</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="Hishop.Plugins">
+      <HintPath>..\Hishop.Plugins\bin\Debug\Hishop.Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="ASPNET.WebControls">
+      <HintPath>..\Hidistro.UI.Web\bin\ASPNET.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.UI.SaleSystem.Tags">
+      <HintPath>..\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.UI.SaleSystem.Tags.dll</HintPath>
+    </Reference>
+    <Reference Include="TopSdk">
+      <HintPath>..\Hidistro.UI.Web\bin\TopSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+    <Reference Include="Hidistro.SaleSystem.Catalog">
+      <HintPath>..\Hidistro.SaleSystem.Catalog\bin\Debug\Hidistro.SaleSystem.Catalog.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.Membership.Core">
+      <HintPath>..\Hidistro.Membership.Core\bin\Debug\Hidistro.Membership.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.Core">
+      <HintPath>..\Hidistro.Core\bin\Debug\Hidistro.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.Messages">
+      <HintPath>..\Hidistro.Messages\bin\Debug\Hidistro.Messages.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.SaleSystem.Comments">
+      <HintPath>..\Hidistro.SaleSystem.Comments\bin\Debug\Hidistro.SaleSystem.Comments.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.AccountCenter.Business">
+      <HintPath>..\Hidistro.AccountCenter.Business\bin\Debug\Hidistro.AccountCenter.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="Hishop.Components.Validation">
+      <HintPath>..\Hishop.Components.Validation\bin\Debug\Hishop.Components.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.SaleSystem.Member">
+      <HintPath>..\Hidistro.SaleSystem.Member\bin\Debug\Hidistro.SaleSystem.Member.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Hidistro.Subsites.Commodities">
+      <HintPath>..\Hidistro.Subsites.Commodities\bin\Debug\Hidistro.Subsites.Commodities.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.AccountCenter.Profile">
+      <HintPath>..\Hidistro.AccountCenter.Profile\bin\Debug\Hidistro.AccountCenter.Profile.dll</HintPath>
+    </Reference>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IntroducedToFriend.cs" />
+    <Compile Include="HelpDetails.cs" />
+    <Compile Include="PaymentTemplatedWebControl.cs" />
+    <Compile Include="Articles.cs" />
+    <Compile Include="ProductDetails.cs" />
+    <Compile Include="ProductConsultationsAndReplay.cs" />
+    <Compile Include="LookProductReviews.cs" />
+    <Compile Include="LeaveComments.cs" />
+    <Compile Include="ForgotPassword.cs" />
+    <Compile Include="ArticleDetails.cs" />
+    <Compile Include="SubjectGoodsList.cs" />
+    <Compile Include="SaleSyetemResourceNotFound.cs" />
+    <Compile Include="TbImage.cs" />
+    <Compile Include="PublishToTaoBaoHandler.cs" />
+    <Compile Include="ProductReviews.cs" />
+    <Compile Include="GroupBuyProductDetails.cs" />
+    <Compile Include="ProductSearch.cs" />
+    <Compile Include="RegisterAgreement.cs" />
+    <Compile Include="InpourTemplatedWebControl.cs" />
+    <Compile Include="InpourNotify.cs" />
+    <Compile Include="Default.cs" />
+    <Compile Include="Brand.cs" />
+    <Compile Include="SearchTemplatedWebControl.cs" />
+    <Compile Include="GiftDetails.cs" />
+    <Compile Include="VoteResult.cs" />
+    <Compile Include="ProductUnSales.cs" />
+    <Compile Include="AliPayNotify.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="ShoppingHandler.cs" />
+    <Compile Include="Login.cs" />
+    <Compile Include="Helps.cs" />
+    <Compile Include="FavourableDetails.cs" />
+    <Compile Include="AffichesDetails.cs" />
+    <Compile Include="RegisterUserSave.cs" />
+    <Compile Include="InpourReturn.cs" />
+    <Compile Include="CountDownProducts.cs" />
+    <Compile Include="SubmmitOrder.cs" />
+    <Compile Include="Register.cs" />
+    <Compile Include="OpenIdFunction.cs" />
+    <Compile Include="Affiches.cs" />
+    <Compile Include="BrandDetails.cs" />
+    <Compile Include="Promotes.cs" />
+    <Compile Include="OrderNotify.cs" />
+    <Compile Include="Logout.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnProductDetails.cs" />
+    <Compile Include="ShoppingCart.cs" />
+    <Compile Include="CountDownProductsDetails.cs" />
+    <Compile Include="BlogIt.cs" />
+    <Compile Include="FinishOrder.cs" />
+    <Compile Include="ProductConsultations.cs" />
+    <Compile Include="OrderReturn.cs" />
+    <Compile Include="OnlineGifts.cs" />
+    <Compile Include="SubmmitOrderHandler.cs" />
+    <Compile Include="SubCategory.cs" />
+    <Compile Include="ForgotPasswordSuccess.cs" />
+    <Compile Include="SearchResult.cs" />
+    <Compile Include="GroupBuyProducts.cs" />
+    <Compile Include="ExpressData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hidistro.Entities\Hidistro.Entities.csproj">
+      <Project>{B2B18F62-C764-4392-9CA9-46A4EAA84CA1}</Project>
+      <Name>Hidistro.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Membership.Context\Hidistro.Membership.Context.csproj">
+      <Project>{F0EF7F8B-F23D-4165-80B7-239BCE0AF80D}</Project>
+      <Name>Hidistro.Membership.Context</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.SaleSystem.Shopping\Hidistro.SaleSystem.Shopping.csproj">
+      <Project>{06B7230A-5350-4815-BB43-206338AEEEF9}</Project>
+      <Name>Hidistro.SaleSystem.Shopping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.UI.Common.Controls\Hidistro.UI.Common.Controls.csproj">
+      <Project>{6F49E50A-6EF7-427E-9C0E-7230E49BFE91}</Project>
+      <Name>Hidistro.UI.Common.Controls</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

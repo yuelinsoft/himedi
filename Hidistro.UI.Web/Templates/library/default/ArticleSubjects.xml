@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <Subject>
+    <SubjectId>1</SubjectId>
+    <SubjectName>商城资讯</SubjectName>
+    <Categories>
+    </Categories>
+    <CategoryName>
+    </CategoryName>
+    <Keywords>
+    </Keywords>
+    <MaxNum>6</MaxNum>
+  </Subject>
+</root>

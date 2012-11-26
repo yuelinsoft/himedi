@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04812FC6-7C9F-4DBA-8788-DE5380D30F4C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Hidistro.UI.AccountCenter.CodeBehind</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Hidistro.UI.Common.Controls">
+      <HintPath>..\Hidistro.UI.Common.Controls\bin\Debug\Hidistro.UI.Common.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="ASPNET.WebControls">
+      <HintPath>..\Hidistro.UI.Web\bin\ASPNET.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.Core">
+      <HintPath>..\Hidistro.Core\bin\Debug\Hidistro.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.Entities">
+      <HintPath>..\Hidistro.Entities\bin\Debug\Hidistro.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.Membership.Core">
+      <HintPath>..\Hidistro.Membership.Core\bin\Debug\Hidistro.Membership.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Hidistro.AccountCenter.Profile">
+      <HintPath>..\Hidistro.AccountCenter.Profile\bin\Debug\Hidistro.AccountCenter.Profile.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.AccountCenter.Comments">
+      <HintPath>..\Hidistro.AccountCenter.Comments\bin\Debug\Hidistro.AccountCenter.Comments.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="Hidistro.AccountCenter.Business">
+      <HintPath>..\Hidistro.AccountCenter.Business\bin\Debug\Hidistro.AccountCenter.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.SaleSystem.Catalog">
+      <HintPath>..\Hidistro.SaleSystem.Catalog\bin\Debug\Hidistro.SaleSystem.Catalog.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.Messages">
+      <HintPath>..\Hidistro.Messages\bin\Debug\Hidistro.Messages.dll</HintPath>
+    </Reference>
+    <Reference Include="Hishop.Components.Validation">
+      <HintPath>..\Hishop.Components.Validation\bin\Debug\Hishop.Components.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.SaleSystem.Shopping">
+      <HintPath>..\Hidistro.SaleSystem.Shopping\bin\Debug\Hidistro.SaleSystem.Shopping.dll</HintPath>
+    </Reference>
+    <Reference Include="Hishop.Plugins">
+      <HintPath>..\Hishop.Plugins\bin\Debug\Hishop.Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MemberTemplatedWebControl.cs" />
+    <Compile Include="ReferralMembers.cs" />
+    <Compile Include="UserProductReviews.cs" />
+    <Compile Include="UserDefault.cs" />
+    <Compile Include="Common_Messages_UserReceivedMessageList.cs" />
+    <Compile Include="UserPoints.cs" />
+    <Compile Include="Common_CategoriesDropDownList.cs" />
+    <Compile Include="PaySucceed.cs" />
+    <Compile Include="MyCoupons.cs" />
+    <Compile Include="OpenBalance.cs" />
+    <Compile Include="UpdateTranPassword.cs" />
+    <Compile Include="UpdatePasswordProtection.cs" />
+    <Compile Include="Common_Address_AddressList.cs" />
+    <Compile Include="MyAccountSummary.cs" />
+    <Compile Include="Common_Coupon_CouponList.cs" />
+    <Compile Include="Common_Messages_UserSendedMessageList.cs" />
+    <Compile Include="Common_Coupon_ChangeCouponList.cs" />
+    <Compile Include="Favorites.cs" />
+    <Compile Include="UserSendMessage.cs" />
+    <Compile Include="Common_OrderManage_OrderList.cs" />
+    <Compile Include="OrderReviews.cs" />
+    <Compile Include="UserBatchBuy.cs" />
+    <Compile Include="UserSendedMessages.cs" />
+    <Compile Include="UserConsultationsNotReverted.cs" />
+    <Compile Include="MemberGradeDropDownList.cs" />
+    <Compile Include="RequestBalanceDraw.cs" />
+    <Compile Include="ReplyReceivedMessage.cs" />
+    <Compile Include="UserConsultations.cs" />
+    <Compile Include="Common_OrderManage_OrderItems.cs" />
+    <Compile Include="UserOrders.cs" />
+    <Compile Include="Common_Referral_MemberList.cs" />
+    <Compile Include="Common_Favorite_ProductList.cs" />
+    <Compile Include="RequestBalanceDrawConfirm.cs" />
+    <Compile Include="RechargeRequest.cs" />
+    <Compile Include="RechargeConfirm.cs" />
+    <Compile Include="Bank.cs" />
+    <Compile Include="UserSendedMessageDetails.cs" />
+    <Compile Include="UpdatePassword.cs" />
+    <Compile Include="UserOrderDetails.cs" />
+    <Compile Include="Common_BatchBuy_ProductList.cs" />
+    <Compile Include="Common_Advance_AccountList.cs" />
+    <Compile Include="Pay.cs" />
+    <Compile Include="MyChangeCoupons.cs" />
+    <Compile Include="UserShippingAddresses.cs" />
+    <Compile Include="UserReceivedMessages.cs" />
+    <Compile Include="Common_OrderManage_ReviewsOrderItems.cs" />
+    <Compile Include="UserProfile.cs" />
+    <Compile Include="Common_Point_PointList.cs" />
+    <Compile Include="MyBalanceDetails.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hidistro.Membership.Context\Hidistro.Membership.Context.csproj">
+      <Project>{F0EF7F8B-F23D-4165-80B7-239BCE0AF80D}</Project>
+      <Name>Hidistro.Membership.Context</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

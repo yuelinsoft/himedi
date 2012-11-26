@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F39F28D8-A1D8-457D-ADA0-5F17EF4E0E33}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Hishop.Transfers</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web" />
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\Hidistro.UI.Web\bin\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="LumenWorks.Framework.IO">
+      <HintPath>..\Hidistro.UI.Web\bin\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transfers\HishopExporters\Hishop5_4_2_to_Hishop5_4_2.cs" />
+    <Compile Include="Hishop\Transfers\HishopExporters\Yfx1_2_to_Hishop5_4_2.cs" />
+    <Compile Include="Transfers\HishopImporters\Hishop5_4_2_from_Hishop5_4_2.cs" />
+    <Compile Include="Hishop\Transfers\HishopImporters\Yfx1_2_from_Hishop5_4_2.cs" />
+    <Compile Include="Transfers\PaipaiExporters\Hishop5_4_2_to_paipai4_0.cs" />
+    <Compile Include="Hishop\Transfers\PaipaiExporters\Yfx1_2_to_Paipai4_0.cs" />
+    <Compile Include="Transfers\PaipaiImporters\Hishop5_4_2_from_paipai4_0.cs" />
+    <Compile Include="Hishop\Transfers\PaipaiImporters\Yfx1_2_from_Paipai4_0.cs" />
+    <Compile Include="Transfers\TaobaoExporters\Hishop5_4_2_to_taobao4_6.cs" />
+    <Compile Include="Hishop\Transfers\TaobaoExporters\Hishop5_4_2_to_taobao4_7.cs" />
+    <Compile Include="Hishop\Transfers\TaobaoExporters\Yfx1_2_to_Taobao4_6.cs" />
+    <Compile Include="Hishop\Transfers\TaobaoExporters\Yfx1_2_to_Taobao4_7.cs" />
+    <Compile Include="Hishop\Transfers\TaobaoExporters\Yfx1_2_to_Taobao5_0.cs" />
+    <Compile Include="Transfers\TaobaoImporters\Hishop5_4_2_from_taobao4_6.cs" />
+    <Compile Include="Hishop\Transfers\TaobaoImporters\Hishop5_4_2_from_taobao4_7.cs" />
+    <Compile Include="Hishop\Transfers\TaobaoImporters\Yfx1_2_from_Taobao4_6.cs" />
+    <Compile Include="Hishop\Transfers\TaobaoImporters\Yfx1_2_from_Taobao4_7.cs" />
+    <Compile Include="Hishop\Transfers\TaobaoImporters\Yfx1_2_from_Taobao5_0.cs" />
+    <Compile Include="Hishop\Transfers\YfxExporters\Yfx1_2_to_Yfx1_2.cs" />
+    <Compile Include="Hishop\Transfers\YfxImporters\Yfx1_2_from_Yfx1_2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hishop.TransferManager\Hishop.TransferManager.csproj">
+      <Project>{7BD1C85D-5089-4D6E-BC7D-7E56E21E53CB}</Project>
+      <Name>Hishop.TransferManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

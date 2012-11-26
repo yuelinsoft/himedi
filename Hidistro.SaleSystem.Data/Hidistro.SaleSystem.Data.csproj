@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4839229C-1D3D-4AD4-8480-DE3C615AAA9E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Hidistro.SaleSystem.Data</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=7f2f4d7aece0749d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Hidistro.UI.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\Hidistro.UI.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CategoryData.cs" />
+    <Compile Include="CommentData.cs" />
+    <Compile Include="CookieShoppingData.cs" />
+    <Compile Include="MemberData.cs" />
+    <Compile Include="ProductData.cs" />
+    <Compile Include="ShoppingData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hidistro.Core\Hidistro.Core.csproj">
+      <Project>{1988A893-A17B-405A-958A-F285ACB64E88}</Project>
+      <Name>Hidistro.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Entities\Hidistro.Entities.csproj">
+      <Project>{B2B18F62-C764-4392-9CA9-46A4EAA84CA1}</Project>
+      <Name>Hidistro.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Membership.Context\Hidistro.Membership.Context.csproj">
+      <Project>{F0EF7F8B-F23D-4165-80B7-239BCE0AF80D}</Project>
+      <Name>Hidistro.Membership.Context</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Membership.Core\Hidistro.Membership.Core.csproj">
+      <Project>{7D1CC453-DBF6-4190-ABCE-C9DB063AD0B4}</Project>
+      <Name>Hidistro.Membership.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.SaleSystem.Catalog\Hidistro.SaleSystem.Catalog.csproj">
+      <Project>{9B88E294-28E9-43ED-B68B-FE637C4EE0A7}</Project>
+      <Name>Hidistro.SaleSystem.Catalog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.SaleSystem.Comments\Hidistro.SaleSystem.Comments.csproj">
+      <Project>{ECC8D1E8-946C-4113-91F4-E47EC4E8E278}</Project>
+      <Name>Hidistro.SaleSystem.Comments</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.SaleSystem.Member\Hidistro.SaleSystem.Member.csproj">
+      <Project>{C1E7B11A-41F1-47A1-9EBB-4F6E11E42B5E}</Project>
+      <Name>Hidistro.SaleSystem.Member</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.SaleSystem.Shopping\Hidistro.SaleSystem.Shopping.csproj">
+      <Project>{06B7230A-5350-4815-BB43-206338AEEEF9}</Project>
+      <Name>Hidistro.SaleSystem.Shopping</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
