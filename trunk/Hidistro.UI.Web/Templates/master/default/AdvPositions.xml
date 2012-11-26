@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <AdvPositions>
+    <AdvPositionName>AD1</AdvPositionName>
+    <AdvHtml>&lt;img src="/templates/master/default/fckfiles/Files/Image/20120109145021_1516.jpg" alt="" border="0" /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD2</AdvPositionName>
+    <AdvHtml>&lt;div id="lunhuanJS"&gt;&lt;!--产品分类开始 --&gt;&lt;!--产品分类结束--&gt;&lt;!--轮播 tab标签 --&gt;&lt;div class="lunhuan_content"&gt;&lt;!--舌签1开始 --&gt;&lt;div class="tab_1"&gt;
+&lt;div id="pic" class="tab_img"&gt;&lt;a href="#"&gt;&lt;img src="/Templates/master/default/images/ad2/1.jpg" /&gt;&lt;/a&gt; &lt;a href="#"&gt;&lt;img src="/Templates/master/default/images/ad2/2.jpg" /&gt;&lt;/a&gt; &lt;a href="#"&gt;&lt;img src="/Templates/master/default/images/ad2/3.jpg" /&gt;&lt;/a&gt; &lt;a href="#"&gt;&lt;img src="/Templates/master/default/images/ad2/4.jpg" /&gt;&lt;/a&gt; &lt;a href="#"&gt;&lt;img src="/Templates/master/default/images/ad2/5.jpg" /&gt;&lt;/a&gt; &lt;/div&gt;
+&lt;div style="clear:both;"&gt;&lt;/div&gt;
+&lt;div class="tab_menu"&gt;
+&lt;ul id="play"&gt;
+&lt;li style="cursor:pointer;" id="li0" class="lunhuanJSbg active" alt="1"&gt;&lt;a&gt;1&lt;/a&gt; &lt;/li&gt;
+&lt;li style="cursor:pointer;" id="li1" class="lunhuanJSbg normal" alt="2"&gt;&lt;a&gt;2&lt;/a&gt; &lt;/li&gt;
+&lt;li style="cursor:pointer;" id="li2" class="lunhuanJSbg normal" alt="3"&gt;&lt;a&gt;3&lt;/a&gt; &lt;/li&gt;
+&lt;li style="cursor:pointer;" id="li3" class="lunhuanJSbg normal" alt="4"&gt;&lt;a&gt;4&lt;/a&gt; &lt;/li&gt;
+&lt;li style="cursor:pointer;" id="li4" class="lunhuanJSbg normal" alt="5"&gt;&lt;a&gt;5&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="clear:both;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--右侧 --&gt;&lt;/div&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD3</AdvPositionName>
+    <AdvHtml>&lt;img src="/templates/master/default/fckfiles/Files/Image/20120109161852_7394.jpg" alt="" border="0" /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD4</AdvPositionName>
+    <AdvHtml>&lt;img src="/templates/master/default/fckfiles/Files/Image/20120203170906_8148.jpg" alt="" border="0" /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD5</AdvPositionName>
+    <AdvHtml>&lt;img src="/templates/master/default/fckfiles/Files/Image/20120203170946_3021.jpg" alt="" border="0" /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD6</AdvPositionName>
+    <AdvHtml>&lt;img src="/templates/master/default/fckfiles/Files/Image/20120203171043_5033.jpg" alt="" border="0" /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD7</AdvPositionName>
+    <AdvHtml>&lt;img src="/templates/master/default/fckfiles/Files/Image/20120203171110_1539.jpg" alt="" border="0" /&gt;&lt;br /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD8</AdvPositionName>
+    <AdvHtml>&lt;img src="/templates/master/default/fckfiles/Files/Image/20120203171129_5840.jpg" alt="" border="0" /&gt;&lt;br /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD9</AdvPositionName>
+    <AdvHtml>AD9&lt;br /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD10</AdvPositionName>
+    <AdvHtml>AD10&lt;br /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD11</AdvPositionName>
+    <AdvHtml>AD11&lt;br /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD12</AdvPositionName>
+    <AdvHtml>AD12&lt;br /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD13</AdvPositionName>
+    <AdvHtml>AD13&lt;br /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD14</AdvPositionName>
+    <AdvHtml>&lt;img src="/templates/master/default/fckfiles/Files/Image/20120203171346_5428.jpg" alt="" border="0" /&gt;&lt;br /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD15</AdvPositionName>
+    <AdvHtml>&lt;img src="/templates/master/default/fckfiles/Files/Image/20120203171406_1909.jpg" alt="" border="0" /&gt;&lt;br /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD16</AdvPositionName>
+    <AdvHtml>&lt;img src="/templates/master/default/fckfiles/Files/Image/20120203171424_1600.jpg" alt="" border="0" /&gt;&lt;br /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD17</AdvPositionName>
+    <AdvHtml>&lt;img src="/templates/master/default/fckfiles/Files/Image/20120203171451_1665.jpg" alt="" border="0" /&gt;&lt;br /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD18</AdvPositionName>
+    <AdvHtml>&lt;img src="/templates/master/default/fckfiles/Files/Image/20120203171514_7288.jpg" alt="" border="0" /&gt;&lt;br /&gt;</AdvHtml>
+  </AdvPositions>
+  <AdvPositions>
+    <AdvPositionName>AD19</AdvPositionName>
+    <AdvHtml>&lt;img src="/templates/master/default/fckfiles/Files/Image/20120109145929_3920.jpg" alt="" border="0" /&gt;</AdvHtml>
+  </AdvPositions>
+</root>

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F49E50A-6EF7-427E-9C0E-7230E49BFE91}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Hidistro.UI.Common.Controls</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="ASPNET.WebControls">
+      <HintPath>..\Hidistro.UI.Web\bin\ASPNET.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Hidistro.Entities">
+      <HintPath>..\Hidistro.Entities\bin\Debug\Hidistro.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="Hidistro.Membership.Core">
+      <HintPath>..\Hidistro.Membership.Core\bin\Debug\Hidistro.Membership.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="Hidistro.Core">
+      <HintPath>..\Hidistro.Core\bin\Debug\Hidistro.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Compile Include="SkuContentLabel.cs" />
+    <Compile Include="DisplayThemesImages.cs" />
+    <Compile Include="PageSizeDropDownList.cs" />
+    <Compile Include="OrderStatusLabel.cs" />
+    <Compile Include="MailPriorityRadioButtonList.cs" />
+    <Compile Include="Script.cs" />
+    <Compile Include="DecimalLengthDropDownList.cs" />
+    <Compile Include="TemplatedWebControl.cs" />
+    <Compile Include="AscxTemplatedWebControl.cs" />
+    <Compile Include="Common_UserLogin.cs" />
+    <Compile Include="ClassShowOnDataLitl.cs" />
+    <Compile Include="ShippingModeDropDownList.cs" />
+    <Compile Include="ThemedTemplatedList.cs" />
+    <Compile Include="UploadType.cs" />
+    <Compile Include="ImageUploader.cs" />
+    <Compile Include="BrandCategoriesDropDownList.cs" />
+    <Compile Include="TradeTypeDropDownList.cs" />
+    <Compile Include="MessageStatusDropDownList.cs" />
+    <Compile Include="UploadHandler.cs" />
+    <Compile Include="IText.cs" />
+    <Compile Include="HiLiteral.cs" />
+    <Compile Include="HiLabel.cs" />
+    <Compile Include="LiteralWrapper.cs" />
+    <Compile Include="LabelWrapper.cs" />
+    <Compile Include="TextControlHelper.cs" />
+    <Compile Include="WangWangConversations.cs" />
+    <Compile Include="ProductDetailsLink.cs" />
+    <Compile Include="OrderStautsDropDownList.cs" />
+    <Compile Include="OrderRemarkImage.cs" />
+    <Compile Include="OperationDropDownList.cs" />
+    <Compile Include="FormatedTimeLabel.cs" />
+    <Compile Include="ControlProvider.cs" />
+    <Compile Include="IButton.cs" />
+    <Compile Include="ButtonManager.cs" />
+    <Compile Include="ButtonWrapper.cs" />
+    <Compile Include="HiImageButtonWrapper.cs" />
+    <Compile Include="LinkButtonWrapper.cs" />
+    <Compile Include="ImageLinkButtonWrapper.cs" />
+    <Compile Include="ThemeImage.cs" />
+    <Compile Include="RegionAllName.cs" />
+    <Compile Include="OrderRemarkImageRadioButtonList.cs" />
+    <Compile Include="HtmlTemplatedWebControl.cs" />
+    <Compile Include="PageHolder.cs" />
+    <Compile Include="FormatedSiteUrl.cs" />
+    <Compile Include="LeaveListTime.cs" />
+    <Compile Include="ImageOrderDropDownList.cs" />
+    <Compile Include="UserStatisticeChart.cs" />
+    <Compile Include="GenderRadioButtonList.cs" />
+    <Compile Include="ExportFieldsCheckBoxList.cs" />
+    <Compile Include="PuchaseStatusLabel.cs" />
+    <Compile Include="OrderRefundStatusMark.cs" />
+    <Compile Include="MonthDropDownList.cs" />
+    <Compile Include="ThemedTemplatedRepeater.cs" />
+    <Compile Include="SmallStatusMessage.cs" />
+    <Compile Include="SaleStatisticsTypeRadioButtonList.cs" />
+    <Compile Include="RegionSelector.cs" />
+    <Compile Include="TrimTextBox.cs" />
+    <Compile Include="HtmlDecodeTextBox.cs" />
+    <Compile Include="HeadContainer.cs" />
+    <Compile Include="ProductSaleStatusDropDownList.cs" />
+    <Compile Include="ProductLineDropDownList.cs" />
+    <Compile Include="ListRadioButton.cs" />
+    <Compile Include="FormatedMoneyLabel.cs" />
+    <Compile Include="ExportFormatRadioButtonList.cs" />
+    <Compile Include="HiPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFixerHtml32TextWriter.cs" />
+    <Compile Include="FormFixerHtmlTextWriter.cs" />
+    <Compile Include="ApprovedDropDownList.cs" />
+    <Compile Include="YearDropDownList.cs" />
+    <Compile Include="MetaTags.cs" />
+    <Compile Include="SiteUrl.cs" />
+    <Compile Include="RefundOrderModeRadioButtonList.cs" />
+    <Compile Include="OrderUserRemark.cs" />
+    <Compile Include="Style.cs" />
+    <Compile Include="CustomChart.cs" />
+    <Compile Include="ExpressRadioButtonList.cs" />
+    <Compile Include="SkinNotFoundException.cs" />
+    <Compile Include="StatusMessage.cs" />
+    <Compile Include="ProductTypeDownList.cs" />
+    <Compile Include="CloseTranReasonDropDownList.cs" />
+    <Compile Include="YesNoRadioButtonList.cs" />
+    <Compile Include="TradeTypeNameLabel.cs" />
+    <Compile Include="HiImage.cs" />
+    <Compile Include="RegionHandler.cs" />
+    <Compile Include="GroupBuyStatusLabel.cs" />
+    <Compile Include="SubStringLabel.cs" />
+    <Compile Include="ShippingModeRadioButtonList.cs" />
+    <Compile Include="PromoteTypeDropDownList.cs" />
+    <Compile Include="OrderAdminRemark.cs" />
+    <Compile Include="MoneyColumnForAdmin.cs" />
+    <Compile Include="ImageLinkButton.cs" />
+    <Compile Include="ImagePosition.cs" />
+    <Compile Include="HiImageButton.cs" />
+    <Compile Include="Formatter.cs" />
+    <Compile Include="PageTitle.cs" />
+    <Compile Include="ListImage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Hidistro.UI.Common.Controls.ImageUploader.script.upload.js" />
+    <EmbeddedResource Include="Hidistro.UI.Common.Controls.region.helper.js" />
+    <EmbeddedResource Include="Hidistro.UI.Common.Controls.ImageUploader.css.style.css" />
+    <EmbeddedResource Include="Hidistro.UI.Common.Controls.ImageUploader.images.upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hidistro.Membership.Context\Hidistro.Membership.Context.csproj">
+      <Project>{F0EF7F8B-F23D-4165-80B7-239BCE0AF80D}</Project>
+      <Name>Hidistro.Membership.Context</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

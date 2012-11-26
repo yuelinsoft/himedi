@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2B18F62-C764-4392-9CA9-46A4EAA84CA1}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Hidistro.Entities</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Hidistro\Entities\Comments\AfficheInfo.cs" />
+    <Compile Include="Hidistro\Entities\Comments\ArticleCategoryInfo.cs" />
+    <Compile Include="Hidistro\Entities\Comments\ArticleInfo.cs" />
+    <Compile Include="Hidistro\Entities\Comments\ArticleQuery.cs" />
+    <Compile Include="Hidistro\Entities\Comments\ConsultationReplyType.cs" />
+    <Compile Include="Hidistro\Entities\Comments\HelpCategoryInfo.cs" />
+    <Compile Include="Hidistro\Entities\Comments\HelpInfo.cs" />
+    <Compile Include="Hidistro\Entities\Comments\LeaveCommentInfo.cs" />
+    <Compile Include="Hidistro\Entities\Comments\LeaveCommentQuery.cs" />
+    <Compile Include="Hidistro\Entities\Comments\LeaveCommentReplyInfo.cs" />
+    <Compile Include="Hidistro\Entities\Comments\MessageStatus.cs" />
+    <Compile Include="Hidistro\Entities\Comments\ProductConsultationAndReplyQuery.cs" />
+    <Compile Include="Hidistro\Entities\Comments\ProductConsultationInfo.cs" />
+    <Compile Include="Hidistro\Entities\Comments\ProductReviewAndReplyQuery.cs" />
+    <Compile Include="Hidistro\Entities\Comments\ProductReviewInfo.cs" />
+    <Compile Include="Hidistro\Entities\Comments\ProductReviewQuery.cs" />
+    <Compile Include="Hidistro\Entities\Comments\ReceivedMessageQuery.cs" />
+    <Compile Include="Hidistro\Entities\Comments\ReceiveMessageInfo.cs" />
+    <Compile Include="Hidistro\Entities\Comments\SendedMessageQuery.cs" />
+    <Compile Include="Hidistro\Entities\Comments\SendMessageInfo.cs" />
+    <Compile Include="Hidistro\Entities\Comments\UserProductReviewAndReplyQuery.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\ProductQuery.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\AdvancedProductQuery.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\AttributeInfo.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\AttributeUseageMode.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\AttributeValueInfo.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\BrandCategoryInfo.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\BrowsedProductQueue.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\CategoryActionStatus.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\CategoryInfo.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\CategorySearchType.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\CategoryZIndex.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\PenetrationStatus.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\ProductActionStatus.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\ProductBrowseInfo.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\ProductBrowseQuery.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\ProductInfo.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\ProductTypeInfo.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\ProductTypeQuery.cs" />
+    <Compile Include="Hishop\Commodities\Components\SelectModeTypes.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\SKUItem.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\SubjectListQuery.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\SubjectType.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\ProductSaleStatus.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\PublishStatus.cs" />
+    <Compile Include="Hidistro\Entities\DataMapper.cs" />
+    <Compile Include="Hidistro\Entities\Distribution\DistributorQuery.cs" />
+    <Compile Include="Hidistro\Entities\Members\DistributorGradeInfo.cs" />
+    <Compile Include="Hidistro\Entities\Commodities\ProductLineInfo.cs" />
+    <Compile Include="Hidistro\Entities\Distribution\SiteRequestInfo.cs" />
+    <Compile Include="Hidistro\Entities\Distribution\SiteRequestStatus.cs" />
+    <Compile Include="Hidistro\Entities\EmailType.cs" />
+    <Compile Include="Hidistro\Entities\HOP\TaobaoProductInfo.cs" />
+    <Compile Include="Hidistro\Entities\ManageThemeInfo.cs" />
+    <Compile Include="Hidistro\Entities\Members\AccountSummaryInfo.cs" />
+    <Compile Include="Hidistro\Entities\Members\BalanceDetailInfo.cs" />
+    <Compile Include="Hidistro\Entities\Members\BalanceDetailQuery.cs" />
+    <Compile Include="Hidistro\Entities\Members\BalanceDrawRequestInfo.cs" />
+    <Compile Include="Hidistro\Entities\Members\BalanceDrawRequestQuery.cs" />
+    <Compile Include="Hidistro\Entities\Members\FreezeType.cs" />
+    <Compile Include="Hidistro\Entities\Members\InpourRequestInfo.cs" />
+    <Compile Include="Hidistro\Entities\Members\MemberGradeInfo.cs" />
+    <Compile Include="Hidistro\Entities\Members\MemberQuery.cs" />
+    <Compile Include="Hidistro\Entities\Members\MemberRankActionStatus.cs" />
+    <Compile Include="Hidistro\Entities\Members\OpenIdSettingsInfo.cs" />
+    <Compile Include="Hidistro\Entities\Members\TradeTypes.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\CountDownInfo.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\CouponActionStatus.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\CouponInfo.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\CouponItemInfo.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\PromotionInfo.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\FullDiscountInfo.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\DiscountValueType.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\FullFreeInfo.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\GiftActionStatus.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\GiftInfo.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\GiftQuery.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\GropBuyConditionInfo.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\GroupBuyInfo.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\GroupBuyQuery.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\GroupBuyStatus.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\PurchaseGiftInfo.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\PromotionActionStatus.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\PromotionProductQuery.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\PromoteType.cs" />
+    <Compile Include="Hidistro\Entities\Promotions\WholesaleDiscountInfo.cs" />
+    <Compile Include="Hidistro\Entities\RegionHelper.cs" />
+    <Compile Include="Hidistro\Entities\Sales\AddCartItemStatus.cs" />
+    <Compile Include="Hidistro\Entities\Sales\StatisticsInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\AdminStatisticsInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\CalculateModeTypes.cs" />
+    <Compile Include="Hidistro\Entities\Sales\CurrencyActionStatus.cs" />
+    <Compile Include="Hidistro\Entities\Sales\ExpressCompanyInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\LeaveWordUserType.cs" />
+    <Compile Include="Hidistro\Entities\Sales\LineItemInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\OrderActions.cs" />
+    <Compile Include="Hidistro\Entities\Sales\OrderGiftInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\OrderGiftQuery.cs" />
+    <Compile Include="Hidistro\Entities\Sales\OrderMark.cs" />
+    <Compile Include="Hidistro\Entities\Sales\OrderInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\OrderLookupItemInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\OrderLookupListInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\OrderOptionInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\OrderPriceStatisticsForChartInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\OrderQuery.cs" />
+    <Compile Include="Hidistro\Entities\Sales\OrderStatisticsInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\PaymentModeActionStatus.cs" />
+    <Compile Include="Hidistro\Entities\Sales\PaymentModeInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\PurchaseOrderActions.cs" />
+    <Compile Include="Hidistro\Entities\Sales\PurchaseOrderGiftQuery.cs" />
+    <Compile Include="Hidistro\Entities\Sales\PurchaseOrderInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\PurchaseOrderTaobaoInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\PurchaseShoppingCartItemInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\RankingsState.cs" />
+    <Compile Include="Hidistro\Entities\Sales\RefundStatus.cs" />
+    <Compile Include="Hidistro\Entities\Sales\SaleStatisticsAnalyzeInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\SaleStatisticsQuery.cs" />
+    <Compile Include="Hidistro\Entities\Sales\SaleStatisticsType.cs" />
+    <Compile Include="Hidistro\Entities\Sales\SelectModeTypes.cs" />
+    <Compile Include="Hidistro\Entities\Sales\ShippingAddressInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\ShippingModeGroupInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\ShippingModeInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\ShippingModeRegionInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\ShippingRegionInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\ShoppingCartInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\ShoppingCartItemInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\TaskPrintInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\UserOrderQuery.cs" />
+    <Compile Include="Hidistro\Entities\Sales\UserPointInfo.cs" />
+    <Compile Include="Hishop\SalesManagement\Components\UserPointsQuery.cs" />
+    <Compile Include="Hidistro\Entities\Sales\UserPointTradeType.cs" />
+    <Compile Include="Hidistro\Entities\Sales\UserStatisticsForDate.cs" />
+    <Compile Include="Hidistro\Entities\Sales\UserStatisticsInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\OrderStatus.cs" />
+    <Compile Include="Hidistro\Entities\Sales\PurchaseOrderItemInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\PurchaseOrderGiftInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\PurchaseOrderOptionInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\PurchaseOrderQuery.cs" />
+    <Compile Include="Hidistro\Entities\Sales\ShippersInfo.cs" />
+    <Compile Include="Hidistro\Entities\Sales\ShoppingCartGiftInfo.cs" />
+    <Compile Include="Hidistro\Entities\Store\AdvPositionInfo.cs" />
+    <Compile Include="Hidistro\Entities\Store\FriendlyLinksInfo.cs" />
+    <Compile Include="Hidistro\Entities\Store\ManagerQuery.cs" />
+    <Compile Include="Hidistro\Entities\Store\OperationLogEntry.cs" />
+    <Compile Include="Hidistro\Entities\Store\OperationLogQuery.cs" />
+    <Compile Include="Hidistro\Entities\Store\Privilege.cs" />
+    <Compile Include="Hidistro\Entities\Store\ProductSubjectInfo.cs" />
+    <Compile Include="Hidistro\Entities\Store\VoteCheckType.cs" />
+    <Compile Include="Hidistro\Entities\Store\VoteInfo.cs" />
+    <Compile Include="Hidistro\Entities\Store\VoteItemInfo.cs" />
+    <Compile Include="Hidistro\Entities\Comments\HelpQuery.cs" />
+    <Compile Include="Hidistro\Entities\Store\ArticleSubjectInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hidistro.Core\Hidistro.Core.csproj">
+      <Project>{1988A893-A17B-405A-958A-F285ACB64E88}</Project>
+      <Name>Hidistro.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Membership.Context\Hidistro.Membership.Context.csproj">
+      <Project>{F0EF7F8B-F23D-4165-80B7-239BCE0AF80D}</Project>
+      <Name>Hidistro.Membership.Context</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Membership.Core\Hidistro.Membership.Core.csproj">
+      <Project>{7D1CC453-DBF6-4190-ABCE-C9DB063AD0B4}</Project>
+      <Name>Hidistro.Membership.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hishop.Components.Validation\Hishop.Components.Validation.csproj">
+      <Project>{F1E0B145-803B-4323-89E6-86354B3ACB07}</Project>
+      <Name>Hishop.Components.Validation</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
