@@ -34,11 +34,26 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Reference Include="Hidistro.Entities">
-      <HintPath>..\Hidistro.Entities\bin\Debug\Hidistro.Entities.dll</HintPath>
-    </Reference>
     <Reference Include="Hidistro.Core">
       <HintPath>..\Hidistro.Core\bin\Debug\Hidistro.Core.dll</HintPath>
     </Reference>
@@ -54,6 +69,10 @@
     <Compile Include="SubsiteCommentsProvider.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Hidistro.Entities\Hidistro.Entities.csproj">
+      <Project>{b2b18f62-c764-4392-9ca9-46a4eaa84ca1}</Project>
+      <Name>Hidistro.Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Hidistro.Membership.Context\Hidistro.Membership.Context.csproj">
       <Project>{F0EF7F8B-F23D-4165-80B7-239BCE0AF80D}</Project>
       <Name>Hidistro.Membership.Context</Name>

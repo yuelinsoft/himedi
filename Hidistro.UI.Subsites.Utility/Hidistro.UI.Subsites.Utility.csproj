@@ -34,15 +34,30 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Web" />
-    <Reference Include="Hidistro.UI.Common.Controls">
-      <HintPath>..\Hidistro.UI.Common.Controls\bin\Debug\Hidistro.UI.Common.Controls.dll</HintPath>
-    </Reference>
     <Reference Include="Hishop.Components.Validation">
       <HintPath>..\Hishop.Components.Validation\bin\Debug\Hishop.Components.Validation.dll</HintPath>
     </Reference>
@@ -56,9 +71,6 @@
     </Reference>
     <Reference Include="kindeditor.Net">
       <HintPath>..\Hidistro.UI.Web\bin\kindeditor.Net.dll</HintPath>
-    </Reference>
-    <Reference Include="Hidistro.Subsites.Comments">
-      <HintPath>..\Hidistro.Subsites.Comments\bin\Debug\Hidistro.Subsites.Comments.dll</HintPath>
     </Reference>
     <Reference Include="Hidistro.Core">
       <HintPath>..\Hidistro.Core\bin\Debug\Hidistro.Core.dll</HintPath>
@@ -77,9 +89,6 @@
     </Reference>
     <Reference Include="Hidistro.Subsites.Store">
       <HintPath>..\Hidistro.Subsites.Store\bin\Debug\Hidistro.Subsites.Store.dll</HintPath>
-    </Reference>
-    <Reference Include="Hidistro.Messages">
-      <HintPath>..\Hidistro.Messages\bin\Debug\Hidistro.Messages.dll</HintPath>
     </Reference>
     <Reference Include="System.XML" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -139,9 +148,25 @@
       <Project>{F0EF7F8B-F23D-4165-80B7-239BCE0AF80D}</Project>
       <Name>Hidistro.Membership.Context</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Messages.Data\Hidistro.Messages.Data.csproj">
+      <Project>{179ac388-647d-4f5c-8e98-4e1bea4d27ce}</Project>
+      <Name>Hidistro.Messages.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Messages\Hidistro.Messages.csproj">
+      <Project>{e05d6b6e-c60f-4370-8a89-3dc45222a433}</Project>
+      <Name>Hidistro.Messages</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Hidistro.SaleSystem.Comments\Hidistro.SaleSystem.Comments.csproj">
       <Project>{ECC8D1E8-946C-4113-91F4-E47EC4E8E278}</Project>
       <Name>Hidistro.SaleSystem.Comments</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.Subsites.Comments\Hidistro.Subsites.Comments.csproj">
+      <Project>{04afbe1a-4468-465f-aed7-e81b8df1233b}</Project>
+      <Name>Hidistro.Subsites.Comments</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.UI.Common.Controls\Hidistro.UI.Common.Controls.csproj">
+      <Project>{6f49e50a-6ef7-427e-9c0e-7230e49bfe91}</Project>
+      <Name>Hidistro.UI.Common.Controls</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

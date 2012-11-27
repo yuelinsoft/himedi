@@ -34,6 +34,24 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Reference Include="System.Core">
@@ -53,9 +71,6 @@
     <Reference Include="System.Data" />
     <Reference Include="kindeditor.Net">
       <HintPath>..\Hidistro.UI.Web\bin\kindeditor.Net.dll</HintPath>
-    </Reference>
-    <Reference Include="Hidistro.ControlPanel.Distribution">
-      <HintPath>..\Hidistro.ControlPanel.Distribution\bin\Debug\Hidistro.ControlPanel.Distribution.dll</HintPath>
     </Reference>
     <Reference Include="Hidistro.Core">
       <HintPath>..\Hidistro.Core\bin\Debug\Hidistro.Core.dll</HintPath>
@@ -141,6 +156,10 @@
     <Compile Include="MemberGradeDropDownList.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Hidistro.ControlPanel.Distribution\Hidistro.ControlPanel.Distribution.csproj">
+      <Project>{c24a63c5-103b-462c-8656-f1c173b3c532}</Project>
+      <Name>Hidistro.ControlPanel.Distribution</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Hidistro.Membership.Context\Hidistro.Membership.Context.csproj">
       <Project>{F0EF7F8B-F23D-4165-80B7-239BCE0AF80D}</Project>
       <Name>Hidistro.Membership.Context</Name>
