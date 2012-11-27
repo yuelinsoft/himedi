@@ -65,9 +65,6 @@
     <Reference Include="ASPNET.WebControls">
       <HintPath>..\Hidistro.UI.Web\bin\ASPNET.WebControls.dll</HintPath>
     </Reference>
-    <Reference Include="Hidistro.UI.SaleSystem.Tags">
-      <HintPath>..\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.UI.SaleSystem.Tags.dll</HintPath>
-    </Reference>
     <Reference Include="TopSdk">
       <HintPath>..\Hidistro.UI.Web\bin\TopSdk.dll</HintPath>
     </Reference>
@@ -182,6 +179,10 @@
     <ProjectReference Include="..\Hidistro.UI.Common.Controls\Hidistro.UI.Common.Controls.csproj">
       <Project>{6F49E50A-6EF7-427E-9C0E-7230E49BFE91}</Project>
       <Name>Hidistro.UI.Common.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hidistro.UI.SaleSystem.Tags\Hidistro.UI.SaleSystem.Tags.csproj">
+      <Project>{c49d9036-ab76-4f0a-a83c-88cd93a0149c}</Project>
+      <Name>Hidistro.UI.SaleSystem.Tags</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
