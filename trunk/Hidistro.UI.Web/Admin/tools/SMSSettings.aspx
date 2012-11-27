@@ -14,13 +14,13 @@
             <h1>
                 手机短信设置
             </h1>
-            <span>配置您所获取手机短信平台的信息，系统将使用这些信息自动为客户发送手机短信。</span></div>
-        <div class="datafrom">
+            <span>配置您所获取手机短信平台的信息，系统将使用这些信息自动为客户发送手机短信。</span><span style="color:red;">（当前不可用）</span></div>
+        <div class="datafrom" style="display:none;">
             <div class="formitem">
           <ul id="pluginContainer">
           <li><span class="formitemtitle Pw_140">发送方式：</span>
                <select id="ddlSms" name="ddlSms"></select>
-               <a href="http://www.hishop.com.cn/value-added/duanxin/" target="_blank" >点击此处</a>获取手机短信平台信息
+               <a href="#" target="_blank" >点击此处</a>获取手机短信平台信息
             </li>
             <li rowtype="attributeTemplate" style="display: none"><span class="formitemtitle Pw_140">$Name$：</span>
                 $Input$

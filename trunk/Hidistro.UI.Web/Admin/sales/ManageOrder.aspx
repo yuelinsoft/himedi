@@ -142,7 +142,7 @@
 	   </FooterTemplate>  
         </asp:DataList>
         <div class="instantstat clearfix" id="divSendOrders">
-				注：订单状态列中有“退”字代表该订单退过款；有“(团)”字的代表团购订单
+				备注：
 			</div>
       <div class="blank5 clearfix"></div>
       
