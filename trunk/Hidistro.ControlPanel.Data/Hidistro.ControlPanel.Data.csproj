@@ -57,9 +57,6 @@
     <Reference Include="Hidistro.ControlPanel.Comments">
       <HintPath>..\Hidistro.ControlPanel.Comments\bin\Debug\Hidistro.ControlPanel.Comments.dll</HintPath>
     </Reference>
-    <Reference Include="Hidistro.ControlPanel.Distribution">
-      <HintPath>..\Hidistro.ControlPanel.Distribution\bin\Debug\Hidistro.ControlPanel.Distribution.dll</HintPath>
-    </Reference>
     <Reference Include="Hidistro.ControlPanel.Store">
       <HintPath>..\Hidistro.ControlPanel.Store\bin\Debug\Hidistro.ControlPanel.Store.dll</HintPath>
     </Reference>
@@ -109,6 +106,10 @@
     <Compile Include="StoreData.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Hidistro.ControlPanel.Distribution\Hidistro.ControlPanel.Distribution.csproj">
+      <Project>{c24a63c5-103b-462c-8656-f1c173b3c532}</Project>
+      <Name>Hidistro.ControlPanel.Distribution</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Hidistro.Membership.Context\Hidistro.Membership.Context.csproj">
       <Project>{F0EF7F8B-F23D-4165-80B7-239BCE0AF80D}</Project>
       <Name>Hidistro.Membership.Context</Name>
