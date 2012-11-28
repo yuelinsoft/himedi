@@ -577,6 +577,11 @@
                 }
             }
         }
+
+        public override DataTable GetProductListByUser(int userId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

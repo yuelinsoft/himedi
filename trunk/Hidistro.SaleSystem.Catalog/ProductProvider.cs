@@ -55,6 +55,10 @@
 
         public abstract bool IsBuyProduct(int productId);
         public abstract void LoadProductReview(int productId, out int buyNum, out int reviewNum);
+
+        //Add for himedi
+        public abstract bool SaveProductListForUser(int userId, List<ProductInfo> productIds);
+        public abstract bool RemoveProductsForUser(int userId, List<ProductInfo> productIds);
+        public abstract DataTable GetProductListByUser(int userId);
     }
 }
-
