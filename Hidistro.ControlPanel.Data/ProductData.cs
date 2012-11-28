@@ -2526,6 +2526,16 @@ namespace Hidistro.ControlPanel.Data
             database.AddInParameter(sqlStringCommand, "SkuOuterIds", DbType.String, taobaoProduct.SkuOuterIds);
             return (database.ExecuteNonQuery(sqlStringCommand) > 0);
         }
+
+        public override bool SaveProductListForUser(int userId, List<ProductInfo> productIds)
+        {
+            return true;
+        }
+
+        public override bool RemoveProductsForUser(int userId, List<ProductInfo> productIds)
+        {
+            return true;
+        }
     }
 }
 
